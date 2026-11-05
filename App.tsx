@@ -3,6 +3,7 @@ import { StyleSheet, Text, Pressable, View, Modal } from 'react-native';
 import { useState } from 'react';
 
 export default function App() {
+  const [modalVisible, setModalVisible] = useState(false);
   return (
     <View style={styles.container}>
       <Pressable>
