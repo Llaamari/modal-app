@@ -1,5 +1,6 @@
 
-import { StyleSheet, Text, Pressable, View } from 'react-native';
+import { StyleSheet, Text, Pressable, View, Modal } from 'react-native';
+import { useState } from 'react';
 
 export default function App() {
   return (
