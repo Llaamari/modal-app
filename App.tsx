@@ -20,12 +20,14 @@ export default function App() {
         onRequestClose={() => setModalVisible(false)}
       >
         <View style={styles.modalContainer}>
-          <Text>This is modal...</Text>
+          <View style={styles.modalContent}>
+            <Text>This is modal...</Text>
 
-          {/* Closing a modal window */}
-          <Pressable onPress={() => setModalVisible(false)}>
-            <Text>Close</Text>
-          </Pressable>
+            {/* Closing a modal window */}
+            <Pressable onPress={() => setModalVisible(false)}>
+              <Text>Close</Text>
+            </Pressable>
+          </View>
         </View>
       </Modal>
     </View>
@@ -42,7 +44,12 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  modalContent: {
+    width: '80%',
+    padding: 30,
+    backgroundColor: '#f5f5f5',
+    alignItems: 'center',
     gap: 30,
-    backgroundColor: 'white',
   },
 });
